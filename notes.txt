@@ -1,0 +1,6 @@
+
+
+
+what if we make the add to cart copy the price so that we capture the current price into the cart
+
+the utility functions are great functions to unit test
