@@ -12,5 +12,5 @@ module.exports = [
     new Part("109","Holodeck", 135, "Keep your crew happy, with a relatively low chance of creating a SuperVillain", 900),
     new Part("110","Photon Torpedos", 12, "Guaranteed to destroy your enemies! Totally different than Proton Torpedos", 8),
     new Part("111","Proton Torpodes", 12, "Guaranteed to destroy your enemies! Totally different than Photon Torpedos", 8),
-    new Part("112","Escape Pod", 55, "Keep your crew alive in case of a complete ship loss. Life readings unreliable. No droids allowed.", 12),
+    new Part("112","Escape Pod", 55, "Keep your crew alive in case of a complete ship loss. Life readings unreliable. No droids allowed.", 100),
 ]

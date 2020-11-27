@@ -16,7 +16,7 @@ module.exports = class Part {
     }
 
     getDisplayString() {
-        return `${this.partNum}: ${this.name} $${this.cost}`;
+        return `${this.partNum}: $${this.cost} - ${this.name} `;
     }
 
     getDetailedDisplayString() {
