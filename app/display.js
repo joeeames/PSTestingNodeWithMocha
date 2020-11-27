@@ -4,25 +4,29 @@ const figlet = require('figlet');
 
 
 class Display {
+
+    log(...args) {
+        console.log(...args)
+    }
         
     displayAppName()  {
-        console.log(
+        this.log(
             chalk.yellow(
                 figlet.textSync("Watto's Parts", { horizontalLayout: 'full' })
             )
         );
-        console.log(chalk.redBright('(Republic Credits Not Accepted)\n'))
+        this.log(chalk.redBright('(Republic Credits Not Accepted)\n'))
     }
 
     displayHeader(cart) {
         clear();
         this.displayAppName();
-        console.log(cart.getSummaryDisplay());
+        this.log(cart.getSummaryDisplay());
         this.displayMainMenu();
     }
 
     displayMainMenu() {
-        console.log(`
+        this.log(`
     ${chalk.blue('Main Menu')}
 "L": list parts
 "S query": search parts

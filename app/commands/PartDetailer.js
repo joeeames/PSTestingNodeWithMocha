@@ -13,8 +13,8 @@ module.exports = function(rl, cart, line) {
         return part.partNum === partNumber;
     })
     if(match) {
-        console.log(match.getDetailedDisplayString())
+        display.log(match.getDetailedDisplayString())
     } else {
-        console.log('No part with that Part Number was found');
+        display.log('No part with that Part Number was found');
     }
 }

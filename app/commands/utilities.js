@@ -1,8 +1,10 @@
+const display = require('../display.js');
+
 module.exports = {
     checkForArgument: (line, argNum, errorMessage) => {
         let words = line.split(' ');
         if(words.length < argNum + 1) {
-            console.log(errorMessage)
+            display.log(errorMessage)
             return undefined;
         } else {
             return words[argNum]

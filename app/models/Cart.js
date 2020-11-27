@@ -27,10 +27,13 @@ class Cart {
     }
 
     getDetailedDisplay() {
-        console.log('line items', this.lineItems.length)
         return this.lineItems.map(item => {
             return `${item.quantity} ${item.part.name}(s)  $${item.part.cost * item.quantity} `
         }).join('\n')
+    }
+
+    empty() {
+        this.lineItems = []
     }
     
 }

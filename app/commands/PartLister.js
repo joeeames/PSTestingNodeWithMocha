@@ -5,7 +5,7 @@ module.exports = function(rl, cart) {
     display.displayHeader(cart);
 
     parts.forEach(part => {
-        console.log(part.getDisplayString())
+        display.log(part.getDisplayString())
     });
     
 }

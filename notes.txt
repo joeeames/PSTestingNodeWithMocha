@@ -4,3 +4,8 @@
 what if we make the add to cart copy the price so that we capture the current price into the cart
 
 the utility functions are great functions to unit test
+
+without converting arguments to numbers, the addItem method does string appending and a bug appears
+
+
+need to add in some async stuff

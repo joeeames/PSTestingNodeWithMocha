@@ -24,7 +24,7 @@ module.exports = class Part {
 Part #: ${this.partNum}
 Mass:   ${this.mass}kg
 Cost:   $${this.cost}
-
-${this.description}`
+${this.description}
+`
     }
 }

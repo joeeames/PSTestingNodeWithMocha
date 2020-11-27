@@ -16,9 +16,10 @@ display.displayHeader(cart);
 rl.prompt();
 rl.on('line', (line) => {
     let command = commandDispatcher(line);
-    command(rl, cart, line);
+    let wait = command(rl, cart, line);
 
-    rl.prompt();
+    if(!wait) rl.prompt();
+    
 }).on('close', () => {
     process.exit(0);
 })
