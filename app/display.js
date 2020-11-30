@@ -12,10 +12,9 @@ class Display {
     displayAppName()  {
         this.log(
             chalk.yellow(
-                figlet.textSync("Watto's Parts", { horizontalLayout: 'full' })
+                figlet.textSync("Joe's Parts", { horizontalLayout: 'full' })
             )
         );
-        this.log(chalk.redBright('(Republic Credits Not Accepted)\n'))
     }
 
     displayHeader(cart) {

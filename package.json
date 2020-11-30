@@ -1,11 +1,11 @@
 {
-  "name": "ginit",
+  "name": "parts-store-cli",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha './app/**/*.spec.js' --watch"
   },
   "keywords": [],
   "author": "",
@@ -15,5 +15,10 @@
     "clear": "^0.1.0",
     "clui": "^0.3.6",
     "figlet": "^1.5.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1",
+    "testdouble": "^3.16.1"
   }
 }
