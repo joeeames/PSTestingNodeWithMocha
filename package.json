@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "mocha './app/**/*.spec.js' --watch"
+    "test": "mocha"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +17,6 @@
     "figlet": "^1.5.0"
   },
   "devDependencies": {
-    "chai": "^4.2.0",
     "mocha": "^8.2.1"
   }
 }
