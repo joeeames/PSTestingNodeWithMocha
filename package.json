@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "mocha"
+    "test": "mocha './app/**/*.spec.js'",
+    "coverage": "nyc npm run test"
+  },
+  "mocha": {
+    "watch": true
   },
   "keywords": [],
   "author": "",
@@ -17,6 +21,8 @@
     "figlet": "^1.5.0"
   },
   "devDependencies": {
-    "mocha": "^8.2.1"
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1",
+    "nyc": "^15.1.0"
   }
 }
